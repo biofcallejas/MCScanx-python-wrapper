@@ -5,7 +5,7 @@ This is a python wrapper for running MCScanx
 Unfortunately, the first time I ran it I had a lot of issues, and the manual is not the best. So I decided to create this python wrapper.
 
 
-## Before running the wrapper, the following tools must be installed and available in the path:
+### Before running the wrapper, the following tools must be installed and available in the path:
 
 ```
 blastp (and makeblastdb)
