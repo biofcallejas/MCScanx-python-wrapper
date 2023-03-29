@@ -30,7 +30,7 @@ The first step is to check all dependencies are in the correct path and/or runni
 ### Step 2. Loading/parsing input data
 
 - By default, only ***gene*** features will be extracted.
-- For protein translation the standard code (table 1) will be used.
+- By default the standard code (table 1) is used for protein translation.
 - Pseudogenes (missing any start codon) will be ignored.
 - MCScanX needs a bed-like file containing the annotation (chr\tgeneID\tStart\tEnd), it is created and named as ***prefix.gff***.
 
