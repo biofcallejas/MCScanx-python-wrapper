@@ -117,9 +117,13 @@ Done! [0.582 seconds elapsed]
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 MCScanX finished succesfully ... 
 ```
+### Output files 
 
-
-
+test_final.blast
+test_final.collinearity
+test_final.gff
+test_final.html (directory)
+test_final.tandem
 
 
 
