@@ -2,7 +2,7 @@
 This is a python wrapper for running MCScanx
 
 [MCScanX](https://github.com/wyp1125/MCScanX) is an amazing tool for identifying and visualyzing syntenic blocks between two or more genomes.
-Unfortunately, the first time I ran it I had a lot of issues, and the manual is not the best. So I decided to create this python wrapper.
+Unfortunately, the first time I ran it I had a lot of issues, and the manual is not the best. So, I decided to create this python wrapper.
 
 ### Before running the wrapper, the following tools must be installed and available in the path:
 
@@ -22,7 +22,7 @@ Now, you're ready to run it!
 ### Ussage of the wrapper:
 ```
 python macscanxWrapper.py -h 
-usage: macscanxWrapper.py [-h] -f1 FA_1 -g1 GFF_1 -f2 FA_2 -g2 GFF_2 -t BPTHREADS -p WPREFIX
+usage: macscanxWrapper.py [-h] -f1 specie1.fasta -g1 specie1.gff -f2 file2.fasta -g2 specie2.gff -t threads(int) -p prefix
 
 	Python wrapper for MCScanX
 ---------------------
