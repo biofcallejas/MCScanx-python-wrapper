@@ -9,11 +9,11 @@ Unfortunately, the first time I ran it I had a lot of issues, and the manual is 
 - ```blastp``` (and makeblastdb)
 - ```python 3``` or higher (tested on 3.8.12)
 - ```Biopython```
-- ```MCScanX``` directory MUST be in the working directory and installed. Installation is very simple following the developer's instructions.
+- ```MCScanX``` directory **must** be in the working directory and installed. Installation is very simple following the developer's instructions.
 - ```The wrapper``` installation is not needed, just download the code and is ready to be used.
-```
+
 ### Input data:
-- Genome references must be in fasta format. Chromosome names ***must*** contain 2 letters and one number (i.e ch1, ch2, ch3, etc)
+- Genome references must be in fasta format. Chromosome names **must** contain 2 letters and one number (i.e ch1, ch2, ch3, etc)
 - Genome annotations must be in gff/gff3 format (gene id must be indicated in the 8th column and with the following format: ID=). The chromosome name must match the gff.
 
 Now, you're ready to run it!
@@ -48,7 +48,7 @@ The first step is to check all dependencies are in the correct path and/or runni
 
 ### Step 2. Loading/parsing input data
 
-- By default, only ***gene*** features will be extracted.
+- By default, only **gene** features will be extracted.
 - By default the standard code (table 1) is used for protein translation.
 - Pseudogenes (missing any start codon) will be ignored.
 - MCScanX needs a bed-like file containing the annotation (chr\tgeneID\tStart\tEnd), it is created and named as ***prefix.gff***.
