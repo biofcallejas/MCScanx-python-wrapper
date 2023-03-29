@@ -121,7 +121,7 @@ MCScanX finished succesfully ...
 - test_final.blast
 - test_final.collinearity
 - test_final.gff
-- test_final.html (directory)
+- test_final.html **(directory)**
 - test_final.tandem
 
 
