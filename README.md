@@ -19,6 +19,27 @@ The wrapper: installation is not needed, just download the code and is ready to 
 
 Now, you're ready to run it!
 
+### Ussage of the wrapper
+```
+python macscanxWrapper.py -h 
+usage: macscanxWrapper.py [-h] -f1 FA_1 -g1 GFF_1 -f2 FA_2 -g2 GFF_2 -t BPTHREADS -p WPREFIX
+
+	Python wrapper for MCScanX
+---------------------
+Tested on python 3.8.12
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Mandatory arguments:
+  -f1, --fasta1         Fasta file for specie1 (Genomic sequence)
+  -g1, --gff11          GFF/GFF3 file for specie1
+  -f2, --fasta2         Fasta file for specie2 (Genomic sequence)
+  -g2, --gff2           GFF/GFF3  file for specie2
+  -t, --blastp_threads  Number of threads (CPUs) to use in the BLAST search
+  -p, --prefix          Job prefix, it will be used for MCScanX results
+```
+
 ## The pipeline:
 ![pythonWrapper](https://user-images.githubusercontent.com/45425927/228645462-4ad97d34-0448-478a-815e-522ef74b485a.png)
 
@@ -39,26 +60,6 @@ The first step is to check all dependencies are in the correct path and/or runni
 - By default, blastp will only keep the 5 matches for every sequence in the query.
 - The number of threads for running blastp must be specified (reccomended >= 15).
 - MCScanX will run in its own directory.
-
-```
-python macscanxWrapper.py -h 
-usage: macscanxWrapper.py [-h] -f1 FA_1 -g1 GFF_1 -f2 FA_2 -g2 GFF_2 -t BPTHREADS -p WPREFIX
-
-	Python wrapper for MCScanX
----------------------
-Tested on python 3.8.12
-
-optional arguments:
-  -h, --help            show this help message and exit
-
-Mandatory arguments:
-  -f1, --fasta1         Fasta file for specie1 (Genomic sequence)
-  -g1, --gff11          GFF/GFF3 file for specie1
-  -f2, --fasta2         Fasta file for specie2 (Genomic sequence)
-  -g2, --gff2           GFF/GFF3  file for specie2
-  -t, --blastp_threads  Number of threads (CPUs) to use in the BLAST search
-  -p, --prefix          Job prefix, it will be used for MCScanX results
-```
 
 ### Step 4. Output files
 
@@ -119,11 +120,11 @@ MCScanX finished succesfully ...
 ```
 ### Output files 
 
-test_final.blast
-test_final.collinearity
-test_final.gff
-test_final.html (directory)
-test_final.tandem
+- test_final.blast
+- test_final.collinearity
+- test_final.gff
+- test_final.html (directory)
+- test_final.tandem
 
 
 
