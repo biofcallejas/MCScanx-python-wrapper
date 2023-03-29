@@ -64,7 +64,7 @@ The first step is to check all dependencies are in the correct path and/or runni
 
 - Output files from MCScanX will be placed in the working directory.
 
-### Running using test files:
+### Running the wrapper using test files:
 
 ```
 python macscanxWrapper.py -f1 g3_test.fasta -g1 g3_test.gff3 -f2 3688_test.fasta -g2 3688_test.gff3 -t 15 -p test_final
