@@ -64,6 +64,59 @@ Mandatory arguments:
 
 - Output files from MCScanX will be placed in the working directory.
 
+### Running using test files:
+
+```
+python macscanxWrapper.py -f1 g3_test.fasta -g1 g3_test.gff3 -f2 3688_test.fasta -g2 3688_test.gff3 -t 15 -p test_final
+
+Checking dependencies... 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+./MCScanX-master directory is ready...
+./MCScanX is ready...
+blastp command is ready...
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+Loading and parsing input files...
+
+Valid sequences (proteins) in g3_test.fasta: 11195
+Valid Sequences (proteins) in 3688_test.fasta: 10999
+Annotation file ready: test_final.gff
+
+Generate blastdb:
+makeblastdb -in species_merged.faa -dbtype prot
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+
+Building a new DB, current time: 03/29/2023 12:52:37
+New DB name:   /Users/francisco/Documents/trabajo_nyu/tvag_project/synvisio/python_wrapperMCScanX/species_merged.faa
+New DB title:  species_merged.faa
+Sequence type: Protein
+Deleted existing Protein BLAST database named /Users/francisco/Documents/trabajo_nyu/tvag_project/synvisio/python_wrapperMCScanX/species_merged.faa
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 22194 sequences in 0.444309 seconds.
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+Running Blastp:
+blastp -query species_merged.faa -db species_merged.faa -outfmt 6 -out test_final.blast -max_hsps 5 -max_target_seqs 5 -num_threads 15
+Files for MCScanX are ready: test_final.blast, test_final.gff
+
+MCScanX is running ... 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+Reading BLAST file and pre-processing
+Generating BLAST list
+66695 matches imported (40987 discarded)
+3 pairwise comparisons
+249 alignments generated
+Pairwise collinear blocks written to test_final.collinearity [2.978 seconds elapsed]
+Tandem pairs written to test_final.tandem
+Writing multiple syntenic blocks to HTML files
+tv1.html
+vt1.html
+Done! [0.582 seconds elapsed]
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+MCScanX finished succesfully ... 
+```
 
 
 
