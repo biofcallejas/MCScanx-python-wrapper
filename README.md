@@ -6,12 +6,11 @@ Unfortunately, the first time I ran it I had a lot of issues, and the manual is 
 
 ### Before running the wrapper, the following tools must be installed and available in the path:
 
-```
-blastp (and makeblastdb)
-python 3 or higher (tested on 3.8.12)
-Biopython
-MCScanX directory MUST be in the working directory and installed. Installation is very simple following the developer's instructions.
-The wrapper: installation is not needed, just download the code and is ready to be used.
+- ```blastp``` (and makeblastdb)
+- ```python 3``` or higher (tested on 3.8.12)
+- ```Biopython```
+- ```MCScanX``` directory MUST be in the working directory and installed. Installation is very simple following the developer's instructions.
+- ```The wrapper``` installation is not needed, just download the code and is ready to be used.
 ```
 ### Input data:
 - Genome references must be in fasta format. Chromosome names ***must*** contain 2 letters and one number (i.e ch1, ch2, ch3, etc)
