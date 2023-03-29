@@ -19,7 +19,7 @@ The wrapper: installation is not needed, just download the code and is ready to 
 
 Now, you're ready to run it!
 
-### Ussage of the wrapper
+### Ussage of the wrapper:
 ```
 python macscanxWrapper.py -h 
 usage: macscanxWrapper.py [-h] -f1 FA_1 -g1 GFF_1 -f2 FA_2 -g2 GFF_2 -t BPTHREADS -p WPREFIX
