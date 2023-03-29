@@ -88,10 +88,9 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 
 Building a new DB, current time: 03/29/2023 12:52:37
-New DB name:   /Users/francisco/Documents/trabajo_nyu/tvag_project/synvisio/python_wrapperMCScanX/species_merged.faa
+New DB name:   /Users/Documents/python_wrapperMCScanX/species_merged.faa
 New DB title:  species_merged.faa
 Sequence type: Protein
-Deleted existing Protein BLAST database named /Users/francisco/Documents/trabajo_nyu/tvag_project/synvisio/python_wrapperMCScanX/species_merged.faa
 Keep MBits: T
 Maximum file size: 1000000000B
 Adding sequences from FASTA; added 22194 sequences in 0.444309 seconds.
