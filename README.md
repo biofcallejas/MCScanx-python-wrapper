@@ -12,6 +12,8 @@ Unfortunately, the first time I ran it I had a lot of issues, and the manual cou
 - ```MCScanX``` directory **must** be in the working directory and installed. Installation is very simple following the developer's instructions.
 - ```The wrapper``` installation is not needed, just download the code and is ready to be used.
 
+All of the dependencies can be easily installed using developer's instructions or ```conda```.
+
 ### Input data:
 - Genome references must be in fasta format. Chromosome names **must** contain 2 letters and one number (i.e ch1, ch2, ch3, etc)
 - Genome annotations must be in gff/gff3 format (gene id must be indicated in the 8th column and with the following format: ID=). The chromosome name must match the gff.
