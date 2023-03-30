@@ -16,7 +16,7 @@ All of the dependencies can be easily installed using developer's instructions o
 
 ### Input data:
 - Genome references must be in fasta format. Chromosome names **must** contain 2 letters and one number (i.e ch1, ch2, ch3, etc)
-- Genome annotations must be in gff/gff3 format (gene id must be indicated in the 8th column and with the following format: ID=). The chromosome name must match the gff.
+- Genome annotations must be in gff/gff3 format (gene id must be indicated in the 8th column and with the following format: ID=). The chromosome name/ID **must** match the gff.
 
 Now, you're ready to run it!
 
