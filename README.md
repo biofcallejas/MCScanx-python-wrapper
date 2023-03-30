@@ -51,7 +51,7 @@ The first step is to check all dependencies are in the correct path and/or runni
 - By default, only **gene** features will be extracted.
 - By default the standard code (table 1) is used for protein translation.
 - Pseudogenes (missing any start codon) will be ignored.
-- MCScanX needs a bed-like file containing the annotation (with the following format: **chr**\t**geneID**\t**Start**\t**End**), it is created and named as **prefix.gff** (please notice it is not a conventional gff file, but must be used for visualization i.e using [SynVisio](https://synvisio.github.io/#/)).
+- MCScanX needs a bed-like file containing the annotation (with the following format: **chr**\t**geneID**\t**Start**\t**End**), it is created and named as **prefix.gff** (please notice it is not a conventional gff file, but is used for visualization i.e using [SynVisio](https://synvisio.github.io/#/)).
 
 ### Step 3. Running blastp and MCScanX
 
