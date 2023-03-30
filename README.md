@@ -2,7 +2,7 @@
 This is a python wrapper for running MCScanx
 
 [MCScanX](https://github.com/wyp1125/MCScanX) is an amazing tool for identifying and visualyzing syntenic blocks between two or more genomes.
-Unfortunately, the first time I ran it I had a lot of issues, and the manual is not the best. So, I decided to write this python wrapper.
+Unfortunately, the first time I ran it I had a lot of issues, and the manual could be better. So, I decided to write this python wrapper.
 
 ### Before running the wrapper, the following tools must be installed and available in the path:
 
@@ -51,11 +51,11 @@ The first step is to check all dependencies are in the correct path and/or runni
 - By default, only **gene** features will be extracted.
 - By default the standard code (table 1) is used for protein translation.
 - Pseudogenes (missing any start codon) will be ignored.
-- MCScanX needs a bed-like file containing the annotation (chr\tgeneID\tStart\tEnd), it is created and named as ***prefix.gff***.
+- MCScanX needs a bed-like file containing the annotation (chr\tgeneID\tStart\tEnd), it is created and named as ***prefix.gff*** (please notice it is not a conventional gff file, but must be used for visualization i.e using [SynVisio](https://synvisio.github.io/#/)).
 
 ### Step 3. Running blastp and MCScanX
 
-- Proteins from species1 and species2 will be merged into a single file.
+- Proteins from species1 and species2 will be merged into a single file (if you want to compare >2 species there is no need to duplicate them in the input data).
 - By default, blastp will only keep the 5 matches for every sequence in the query.
 - The number of threads for running blastp must be specified (reccomended >= 15).
 - MCScanX will run in its own directory.
