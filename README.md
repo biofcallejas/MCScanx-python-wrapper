@@ -55,7 +55,7 @@ The first step is to check all dependencies are in the correct path and/or runni
 
 ### Step 3. Running blastp and MCScanX
 
-- Proteins from species1 and species2 will be merged into a single file (if you want to compare >2 species there is no need to duplicate them in the input data).
+- Proteins from species1 and species2 will be merged into a single file. If you want to compare >2 species, there is no need to duplicate them in the input data, they can be present either in species1 or species2.
 - By default, blastp will only keep the 5 matches for every sequence in the query.
 - The number of threads for running blastp must be specified (reccomended >= 15).
 - MCScanX will run in its own directory.
