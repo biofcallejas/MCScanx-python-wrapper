@@ -33,12 +33,12 @@ optional arguments:
   -h, --help            show this help message and exit
 
 Mandatory arguments:
-  -f1, --fasta1         Fasta file for specie1 (Genomic sequence)
-  -g1, --gff1          GFF/GFF3 file for specie1
-  -f2, --fasta2         Fasta file for specie2 (Genomic sequence)
-  -g2, --gff2           GFF/GFF3  file for specie2
-  -t, --blastp_threads  Number of threads (CPUs) to use in the BLAST search
-  -p, --prefix          Job prefix, it will be used for MCScanX results
+  -f1  --fasta1          Fasta file for specie1 (Genomic sequence)
+  -g1  --gff1            GFF/GFF3 file for specie1
+  -f2  --fasta2          Fasta file for specie2 (Genomic sequence)
+  -g2  --gff2            GFF/GFF3  file for specie2
+  -t   --blastp_threads  Number of threads (CPUs) to use in the BLAST search
+  -p   --prefix          Job prefix, it will be used for MCScanX results
 ```
 
 ## The pipeline:
